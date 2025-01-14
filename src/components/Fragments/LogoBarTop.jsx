@@ -4,9 +4,9 @@ import logoProdi from "/logo/logo-prodi.png"
 const LogoBarTop = () => {
   return (
     <>
-      <div className='flex justify-between items-center'>
-        <Logo width="w-20" height="h-20" src={logoProdi} alt="logo universitas" />
-        <Logo width="w-20" height="h-20" src={logoUniv} alt="logo prodi" />
+      <div className='flex justify-between items-center px-4'>
+        <Logo width="w-14" height="h-14" src={logoProdi} alt="logo universitas" style="shadowRounded shadow-white bg-white rounded-full" />
+        <Logo width="w-14" height="h-14" src={logoUniv} alt="logo prodi" style="shadowRounded shadow-white bg-white rounded-full" />
       </div>
     </>
   )

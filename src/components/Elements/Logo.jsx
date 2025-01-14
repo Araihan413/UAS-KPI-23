@@ -1,10 +1,10 @@
 
 const Logo = (props) => {
-  const { width, height, src, alt } = props
+  const { width, height, src, alt, style = "" } = props
   return (
     <>
       <div className="w-max h-max ">
-        <img className={`${width} ${height}`} src={src} alt={alt} />
+        <img className={`${width} ${height} ${style}`} src={src} alt={alt} />
       </div>
     </>
   )

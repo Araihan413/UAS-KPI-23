@@ -9,6 +9,9 @@ export default {
     fontFamily: {
       "primer": ["Lora", "serif"],
       "sekunder": ["Yantramanav", "serif"]
+    },
+    backgroundImage: {
+      "wall": "url('/background/bg-wall.svg')",
     }
   },
   plugins: [],

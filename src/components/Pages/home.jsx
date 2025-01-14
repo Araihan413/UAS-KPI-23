@@ -1,8 +1,9 @@
+import MainPageTemplate from "../Template/MainPageTemplate"
 const Home = () => {
   return (
     <>
       <div>
-        hello semua nya anjay cui
+        <MainPageTemplate video={true} visual={true} audio={true} />
       </div>
     </>
   )
