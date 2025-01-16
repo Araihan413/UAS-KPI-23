@@ -24,8 +24,8 @@ const MainPageTemplate = (props) => {
   return (
     <>
       <div className="relative">
-        <header className="flex flex-col h-screen w-full bg-wall">
-          <div className="flex flex-col h-full md:m-10 border-8 bg-white shadow-full-bold">
+        <header className="flex flex-col lg:h-screen h-screen md:h-[75vh] w-full bg-wall">
+          <div className="flex flex-col h-full md:m-10 my-10 border-8 bg-white shadow-full-bold">
             <section className="relative">
               <ImageParallaxScroll baseVelocity={-4} image={imgFotbar1} />
             </section>

@@ -8,7 +8,7 @@ const CardPdf = (props) => {
     <>
       <div className="flex justify-start pb-5 gap-5 flex-col rounded-md font-sekunder bg-white shadow-full-light w-max">
         <article className=" rounded-md overflow-hidden w-max border-2">
-          <iframe src={pdf} width="350px" height="228px" />
+          <iframe allowfullscreen src={pdf} width="350px" height="228px" className='object-contain border-none' />
         </article>
         <div className='pl-3'>
           <h1 className='font-sekunder text-lg font-medium'>{nama}</h1>
@@ -29,7 +29,7 @@ const CardPdf = (props) => {
               <Button bg="bg-green-400" type="button" style="h-max w-36">
                 <div className='flex justify-center gap-2 p-2'>
                   <FaDownload className="text-white" />
-                  <p className="text-white leading-none">Unduh Pdf</p>
+                  <p className="text-white leading-none">Unduh File</p>
                 </div>
               </Button>
             </a>
