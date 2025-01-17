@@ -22,7 +22,7 @@ const AudioContainer = ({ dataAudio }) => {
           {dataAudio.map((item) => {
             return (
               <div key={item.id}>
-                <CardAudio src={listAudio[item.id - 1]} nama={item.nama} />
+                <CardAudio idVideo={item.id_video} idChannel={item.id_channel} nama={item.nama} type={item.type_audio} />
               </div>
             )
           })}
