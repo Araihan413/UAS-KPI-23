@@ -7,7 +7,7 @@ const VideoContainer = ({ dataVideo }) => {
         <div className="flex flex-col justify-center md:justify-start mb-5 w-full md:w-max gap-2 items-center">
           <div className="flex space-x-2 ">
             <FaPhotoVideo className="text-2xl leading-none text-red-500" />
-            <h1 className="font-sekunder text-2xl font-bold leading-none">Video</h1>
+            <h1 className="font-sekunder text-2xl font-bold leading-none">Animasi</h1>
           </div>
           <div className="flex space-x-1">
             <span className="w-20 h-1 rounded-lg bg-blue-200"></span>
