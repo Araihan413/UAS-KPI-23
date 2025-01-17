@@ -35,7 +35,7 @@ const NavbarMiddle = () => {
           variants={toggle}
           initial={window.innerWidth >= 768 ? "" : "hidden"}
           animate={window.innerWidth >= 768 ? "" : isOpen ? "show" : "hidden"}
-          className="flex flex-col md:flex-row gap-4 md:gap-0 items-center font-sekunder font-medium md:space-x-4 absolute top-20 md:top-0 right-0 md:static w-max h-max bg-white md:bg-transparent p-10 md:p-0 mr-5 md:mr-0 rounded-xl rounded-tr-none md:rounded-none"
+          className="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center font-sekunder font-medium lg:space-x-4 absolute top-20 lg:top-0 right-0 lg:static w-max h-max bg-white lg:bg-transparent p-10 lg:p-0 mr-5 lg:mr-0 rounded-xl rounded-tr-none lg:rounded-none"
         >
           <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
             <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/">Semua</NavLink>
@@ -48,6 +48,9 @@ const NavbarMiddle = () => {
           </li>
           <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
             <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/audio">Audio</NavLink>
+          </li>
+          <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
+            <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/audio visual">Audio Visual</NavLink>
           </li>
         </motion.ul>
       </div>

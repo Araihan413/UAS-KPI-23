@@ -3,7 +3,7 @@ const VideoPage = () => {
   return (
     <>
       <div>
-        <MainPageTemplate video={true} visual={false} audio={false} />
+        <MainPageTemplate video={true} visual={false} audio={false} artikel={false} audioVisual={false} />
       </div>
     </>
   )

@@ -3,19 +3,27 @@ import { useEffect, useRef, useState } from 'react';
 import VideoContainer from './VideoContainer';
 import AudioContainer from './AudioContainer';
 import PdfContainer from './PdfContainer';
+import ArtikelContainer from './ArtikelContainer';
+import AudioVisualContainer from './AudioVisualContainer';
 import dataVideo from '../../data/video.json'
 import dataAudio from '../../data/audio.json'
 import dataVisual from '../../data/visual.json'
+import dataArtikel from '../../data/text.json'
+import dataAudioVisual from '../../data/audioVisual.json'
 const listDataVideo = dataVideo.data
 const ListDataAudio = dataAudio.data
 const listDataVisual = dataVisual.data
+const listDataArtikel = dataArtikel.data
+const listDataAudioVisual = dataAudioVisual.data
 const BarSearch = (props) => {
-  const { id, type = 'text', placeholder = 'masukkan pencarian...', video = false, audio = false, visual = false } = props;
+  const { id, type = 'text', placeholder = 'masukkan pencarian...', video = false, audio = false, visual = false, artikel = false, audioVisual = false } = props;
   const [focus, setFocus] = useState(false);
   const [inputText, setInputText] = useState('');
   const [dataSearchVideo, setDataSearchVideo] = useState(listDataVideo)
   const [dataSearchAudio, setDataSearchAudio] = useState(ListDataAudio)
   const [dataSearchVisual, setDataSearchVisual] = useState(listDataVisual)
+  const [dataSearchArtikel, setDataSearchArtikel] = useState(listDataArtikel)
+  const [dataSearchAudioVisual, setDataSearchAudioVisual] = useState(listDataAudioVisual)
 
   const inputHandler = (event) => {
     event.preventDefault()
@@ -31,6 +39,12 @@ const BarSearch = (props) => {
     const filteredVisual = listDataVisual.filter((item) => {
       return item.nama.toLowerCase().includes(keySearch)
     })
+    const filteredArtikel = listDataArtikel.filter((item) => {
+      return item.nama.toLowerCase().includes(keySearch)
+    })
+    const filteredAudioVisual = listDataAudioVisual.filter((item) => {
+      return item.nama.toLowerCase().includes(keySearch)
+    })
 
     if (inputText) {
       if (video) {
@@ -42,10 +56,18 @@ const BarSearch = (props) => {
       if (visual) {
         setDataSearchVisual(filteredVisual)
       }
+      if (artikel) {
+        setDataSearchArtikel(filteredArtikel)
+      }
+      if (audioVisual) {
+        setDataSearchAudioVisual(filteredAudioVisual)
+      }
     } else {
       setDataSearchVideo(listDataVideo)
       setDataSearchAudio(ListDataAudio)
       setDataSearchVisual(listDataVisual)
+      setDataSearchArtikel(filteredArtikel)
+      setDataSearchAudioVisual(filteredAudioVisual)
     }
   };
 
@@ -90,6 +112,11 @@ const BarSearch = (props) => {
           {audio && (
             <div className="py-10">
               <AudioContainer dataAudio={dataSearchAudio} />
+            </div>
+          )}
+          {audioVisual && (
+            <div className="py-10">
+              <AudioVisualContainer dataAudioVisual={dataSearchAudioVisual} />
             </div>
           )}
         </div>
