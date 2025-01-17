@@ -1,8 +1,9 @@
 import CardPdf from "../Elements/CardPdf"
 import { MdPictureAsPdf } from "react-icons/md";
-import visual1 from '/pdf/GAMBAR_20250115_123723_0000.png'
-
-const listPdf = [visual1, visual1, visual1]
+import visual1 from '/pdf/Rina Anggraini.png'
+import visual2 from '/pdf/sri amalia indah R.jpg'
+import visual3 from '/pdf/haikal aditya.jpg'
+const listPdf = [visual1, visual2, visual3]
 
 const PdfContainer = ({ dataVisual }) => {
   return (
