@@ -32,13 +32,16 @@ const NavbarMiddle = () => {
         </div>
 
         <motion.ul
-          variants={toggle}
+          variants={window.innerWidth >= 768 ? "" : toggle}
           initial={window.innerWidth >= 768 ? "" : "hidden"}
           animate={window.innerWidth >= 768 ? "" : isOpen ? "show" : "hidden"}
           className="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center font-sekunder font-medium lg:space-x-4 absolute top-20 lg:top-0 right-0 lg:static w-max h-max bg-white lg:bg-transparent p-10 lg:p-0 mr-5 lg:mr-0 rounded-xl rounded-tr-none lg:rounded-none"
         >
           <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
             <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/">Semua</NavLink>
+          </li>
+          <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
+            <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/artikel">Artikel</NavLink>
           </li>
           <li className="cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
             <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/video">Video</NavLink>

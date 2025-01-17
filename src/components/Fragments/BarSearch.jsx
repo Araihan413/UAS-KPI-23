@@ -99,6 +99,11 @@ const BarSearch = (props) => {
           </form>
         </div>
         <div className='flex flex-col w-full'>
+          {artikel && (
+            <div className="py-10">
+              <ArtikelContainer dataArtikel={dataSearchArtikel} />
+            </div>
+          )}
           {video && (
             <div className="py-10">
               <VideoContainer dataVideo={dataSearchVideo} />

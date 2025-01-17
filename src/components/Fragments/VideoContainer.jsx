@@ -15,12 +15,10 @@ const VideoContainer = ({ dataVideo }) => {
             <span className="w-20 h-1 rounded-lg bg-blue-200"></span>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center md:justify-between gap-4">
+        <div className="flex flex-wrap justify-center md:justify-start gap-5">
           {dataVideo.map((item) => {
             return (
-              <div key={item.id}>
-                <CardVideo idVideo={item.id_video} idChannel={item.id_channel} />
-              </div>
+              <CardVideo key={item.id} idVideo={item.id_video} idChannel={item.id_channel} nama={item.nama} type={item.type_video} />
             )
           })}
         </div>

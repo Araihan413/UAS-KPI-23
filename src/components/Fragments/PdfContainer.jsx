@@ -21,11 +21,11 @@ const PdfContainer = ({ dataVisual }) => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center md:justify-between gap-4">
+        <div className="flex flex-wrap justify-center md:justify-start gap-5">
           {dataVisual.map((item) => {
             return (
               <div key={item.id}>
-                <CardPdf pdf={listPdf[item.id - 1]} nama={item.nama} />
+                <CardPdf pdf={listPdf[item.id - 1]} nama={item.nama} type={item.type_visual} />
               </div>
             )
           })}

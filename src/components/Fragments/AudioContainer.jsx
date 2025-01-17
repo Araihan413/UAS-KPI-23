@@ -1,8 +1,6 @@
 import { AiFillAudio } from "react-icons/ai";
 import CardAudio from '../Elements/CardAudio'
-import audio1 from '/audio/Ahmad_Fajar_Pamuji.mp4'
 
-const listAudio = [audio1, audio1, audio1]
 const AudioContainer = ({ dataAudio }) => {
   return (
     <>
@@ -18,7 +16,7 @@ const AudioContainer = ({ dataAudio }) => {
             <span className="w-20 h-1 rounded-lg bg-blue-200"></span>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center md:justify-between gap-4">
+        <div className="flex flex-wrap justify-center md:justify-start gap-5">
           {dataAudio.map((item) => {
             return (
               <div key={item.id}>

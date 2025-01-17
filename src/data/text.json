@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "nama": "Muhammad Ali Radja Bahri",
+      "judul": "Disiplin masuk kelas",
+      "deskripsi": "Disiplin masuk kelas merupakan kunci keberhasilan dalam pendidikan.  Kehadiran tepat waktu memungkinkan siswa untuk menyerap materi pelajaran secara maksimal dan berpartisipasi aktif dalam kegiatan belajar mengajar.",
+      "type_text": "Artikel",
+      "lokasi_artikel": "artikel Ali Radja"
+    },
+    {
+      "id": 2,
+      "nama": "Diyah Salwa Hayati",
+      "judul": "CULTURE SHOCK - MAHASISWA ASING DI IAIN SORONG",
+      "deskripsi": "SORONG - Mahasiswa asing yang menempuh studi di IAIN Sorong mengalami fenomena yang dikenal sebagai 'culture shock',culture shock adalah keterkejutan budaya saat mereka beradaptasi dengan lingkungan baru. Proses ini bisa menjadi tantangan yang signifikan, terutama ketika mereka harus berhadapan dengan perbedaan dalam norma, bahasa, dan kebiasaan sehari-hari yang berbeda dari negara asal mereka.",
+      "type_text": "Artikel",
+      "lokasi_artikel": "artikel Diyah"
+    },
+    {
+      "id": 3,
+      "nama": "Nadiyah Nanda Faridah",
+      "judul": "PERKEMBANGAN TEKNOLOGI AI DAN DAMPAKNYA PADA PENDIDIKAN",
+      "deskripsi": "Sorong - Kemunculan konsep kecerdasan buatan pertama kali ditemukan setelah Perang Dunia II oleh seorang matematikawan dan filsuf muda bernama Alan Turing pada 1947. Alan turing beraggapan bahwa jika manusia bisa mengolah informasi dan memecahkan masalah juga membuat keputusan dari informasi tersebut, maka mesin juga bisa melakukannya.",
+      "type_text": "Artikel",
+      "lokasi_artikel": "artikel Nadiyah"
+    }
+  ]
+}

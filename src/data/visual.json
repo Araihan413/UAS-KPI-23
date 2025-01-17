@@ -2,18 +2,18 @@
   "data": [
     {
       "id": 1,
-      "nama": "jumial",
-      "judul": "kjhsajhsa"
+      "nama": "Rina Anggraini",
+      "type_visual": "Poster"
     },
     {
       "id": 2,
-      "nama": "yusuf",
-      "judul": "kjhsajhsa"
+      "nama": "Sri Amalia Indah Ramadhani",
+      "type_visual": "Poster"
     },
     {
       "id": 3,
-      "nama": "amir",
-      "judul": "kjhsajhsa"
+      "nama": "Haikal Aditya",
+      "type_visual": "Poster"
     }
   ]
 }

@@ -2,21 +2,24 @@
   "data": [
     {
       "id": 1,
-      "nama": "rahmat",
-      "id_channel": "UCp_TlWVCLQHmRN2j3WW4bvQ",
-      "id_video": "T19KPhoQdw4"
+      "nama": "Latanda Keliata",
+      "id_channel": "",
+      "id_video": "",
+      "type_video": "Video"
     },
     {
       "id": 2,
-      "nama": "jamal",
-      "id_channel": "UCp_TlWVCLQHmRN2j3WW4bvQ",
-      "id_video": "T19KPhoQdw4"
+      "nama": "Muh Ibnu Rusiq Tajhry",
+      "id_channel": "",
+      "id_video": "",
+      "type_video": "Video"
     },
     {
       "id": 3,
-      "nama": "udin",
-      "id_channel": "UCp_TlWVCLQHmRN2j3WW4bvQ",
-      "id_video": "T19KPhoQdw4"
+      "nama": "Anda Keliata",
+      "id_channel": "",
+      "id_video": "",
+      "type_video": "Video"
     },
     {
       "id": 4,
@@ -27,9 +30,10 @@
     },
     {
       "id": 5,
-      "nama": "hasan",
-      "id_channel": "UCp_TlWVCLQHmRN2j3WW4bvQ",
-      "id_video": "T19KPhoQdw4"
+      "nama": "Qurrota A'yun",
+      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
+      "id_video": "17xpcezdWDA",
+      "type_video": "Animasi"
     },
     {
       "id": 6,
