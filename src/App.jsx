@@ -6,6 +6,7 @@ import AudioPage from './components/Pages/audioPage';
 import ErrorPage from './components/Pages/errorPage';
 import ArtikelPage from './components/Pages/artikelPage';
 import AudioVisualPage from './components/Pages/audioVisualPage';
+import VideoAnimasiPage from './components/Pages/videoAnimasiPage';
 import { ReadArtikelPage1, ReadArtikelPage2, ReadArtikelPage3 } from './components/Pages/readArtikelPage';
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/video',
     element: <VideoPage />,
+  },
+  {
+    path: '/video animasi',
+    element: <VideoAnimasiPage />,
   },
   {
     path: '/visual',

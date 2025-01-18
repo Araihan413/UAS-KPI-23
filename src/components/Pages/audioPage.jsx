@@ -3,7 +3,7 @@ const AudioPage = () => {
   return (
     <>
       <div>
-        <MainPageTemplate video={false} visual={false} audio={true} artikel={false} audioVisual={false} />
+        <MainPageTemplate video={false} videoAnimasi={false} visual={false} audio={true} artikel={false} audioVisual={false} />
       </div>
     </>
   )

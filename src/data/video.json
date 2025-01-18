@@ -3,8 +3,8 @@
     {
       "id": 1,
       "nama": "Latanda Keliata",
-      "id_channel": "",
-      "id_video": "",
+      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
+      "id_video": "3FZpqfGMFLg",
       "type_video": "Video"
     },
     {
@@ -20,27 +20,6 @@
       "id_channel": "",
       "id_video": "",
       "type_video": "Video"
-    },
-    {
-      "id": 4,
-      "nama": "Salma Muthmainnah Sujono",
-      "id_channel": "UCWgwLwAPKZHTETiCpQthnUw",
-      "id_video": "6AA4cU3y1fY",
-      "type_video": "Animasi"
-    },
-    {
-      "id": 5,
-      "nama": "Qurrota A'yun",
-      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
-      "id_video": "17xpcezdWDA",
-      "type_video": "Animasi"
-    },
-    {
-      "id": 6,
-      "nama": "Nur Hidayah",
-      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
-      "id_video": "R-FCQNC-l1M",
-      "type_video": "Animasi"
     }
   ]
 }

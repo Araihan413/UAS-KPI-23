@@ -3,7 +3,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <MainPageTemplate video={true} visual={true} audio={true} artikel={true} audioVisual={true} />
+        <MainPageTemplate video={true} videoAnimasi={true} visual={true} audio={true} artikel={true} audioVisual={true} />
       </div>
     </>
   )

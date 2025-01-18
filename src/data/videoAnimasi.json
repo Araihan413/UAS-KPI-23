@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "nama": "Salma Muthmainnah Sujono",
+      "id_channel": "UCWgwLwAPKZHTETiCpQthnUw",
+      "id_video": "6AA4cU3y1fY",
+      "type_video": "Animasi"
+    },
+    {
+      "id": 2,
+      "nama": "Qurrota A'yun",
+      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
+      "id_video": "17xpcezdWDA",
+      "type_video": "Animasi"
+    },
+    {
+      "id": 3,
+      "nama": "Nur Hidayah",
+      "id_channel": "UCzXYNjomrA-r4t1QOVZ2FOQ",
+      "id_video": "R-FCQNC-l1M",
+      "type_video": "Animasi"
+    }
+  ]
+}

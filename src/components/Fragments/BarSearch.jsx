@@ -5,18 +5,21 @@ import AudioContainer from './AudioContainer';
 import PdfContainer from './PdfContainer';
 import ArtikelContainer from './ArtikelContainer';
 import AudioVisualContainer from './AudioVisualContainer';
+import VideoAnimasiContainer from './VideoAnimasiContainer';
 import dataVideo from '../../data/video.json'
 import dataAudio from '../../data/audio.json'
 import dataVisual from '../../data/visual.json'
 import dataArtikel from '../../data/text.json'
 import dataAudioVisual from '../../data/audioVisual.json'
+import dataVideoAnimasi from '../../data/videoAnimasi.json'
 const listDataVideo = dataVideo.data
 const ListDataAudio = dataAudio.data
 const listDataVisual = dataVisual.data
 const listDataArtikel = dataArtikel.data
 const listDataAudioVisual = dataAudioVisual.data
+const listDataVideoAnimasi = dataVideoAnimasi.data
 const BarSearch = (props) => {
-  const { id, type = 'text', placeholder = 'masukkan pencarian...', video = false, audio = false, visual = false, artikel = false, audioVisual = false } = props;
+  const { id, type = 'text', placeholder = 'masukkan pencarian...', video = false, videoAnimasi = false, audio = false, visual = false, artikel = false, audioVisual = false } = props;
   const [focus, setFocus] = useState(false);
   const [inputText, setInputText] = useState('');
   const [dataSearchVideo, setDataSearchVideo] = useState(listDataVideo)
@@ -24,6 +27,7 @@ const BarSearch = (props) => {
   const [dataSearchVisual, setDataSearchVisual] = useState(listDataVisual)
   const [dataSearchArtikel, setDataSearchArtikel] = useState(listDataArtikel)
   const [dataSearchAudioVisual, setDataSearchAudioVisual] = useState(listDataAudioVisual)
+  const [dataSearchVideoAnimasi, setDataSearchVideoAnimasi] = useState(listDataVideoAnimasi)
 
   const inputHandler = (event) => {
     event.preventDefault()
@@ -31,6 +35,9 @@ const BarSearch = (props) => {
     setInputText(keySearch);
 
     const filteredVideo = listDataVideo.filter((item) => {
+      return item.nama.toLowerCase().includes(keySearch)
+    })
+    const filteredVideoAnimasi = listDataVideoAnimasi.filter((item) => {
       return item.nama.toLowerCase().includes(keySearch)
     })
     const filteredAudio = ListDataAudio.filter((item) => {
@@ -50,6 +57,9 @@ const BarSearch = (props) => {
       if (video) {
         setDataSearchVideo(filteredVideo)
       }
+      if (videoAnimasi) {
+        setDataSearchVideoAnimasi(filteredVideoAnimasi)
+      }
       if (audio) {
         setDataSearchAudio(filteredAudio)
       }
@@ -64,6 +74,7 @@ const BarSearch = (props) => {
       }
     } else {
       setDataSearchVideo(listDataVideo)
+      setDataSearchVideoAnimasi(listDataVideoAnimasi)
       setDataSearchAudio(ListDataAudio)
       setDataSearchVisual(listDataVisual)
       setDataSearchArtikel(filteredArtikel)
@@ -107,6 +118,11 @@ const BarSearch = (props) => {
           {video && (
             <div className="py-10">
               <VideoContainer dataVideo={dataSearchVideo} />
+            </div>
+          )}
+          {videoAnimasi && (
+            <div className="py-10">
+              <VideoAnimasiContainer dataVideoAnimasi={dataSearchVideoAnimasi} />
             </div>
           )}
           {visual && (

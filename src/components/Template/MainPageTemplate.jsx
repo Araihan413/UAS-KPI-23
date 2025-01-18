@@ -20,7 +20,7 @@ const imgFotbar1 = [imageFotbar1, imageFotbar2, imageFotbar3, imageFotbar4, imag
 const imgFotbar2 = [imageFotbar7, imageFotbar8, imageFotbar9, imageFotbar10, imageFotbar11, imageFotbar12, imageFotbar7, imageFotbar8, imageFotbar9, imageFotbar10]
 
 const MainPageTemplate = (props) => {
-  const { video, visual, audio, artikel, audioVisual } = props
+  const { video, videoAnimasi, visual, audio, artikel, audioVisual } = props
   return (
     <>
       <div className="relative">
@@ -44,7 +44,7 @@ const MainPageTemplate = (props) => {
           <NavbarMiddle />
         </section>
         <main className="flex flex-col md:px-20">
-          <BarSearch id="search" type='search' placeholder='Cari Nama...' video={video} visual={visual} audio={audio} artikel={artikel} audioVisual={audioVisual} />
+          <BarSearch id="search" type='search' placeholder='Cari Nama...' video={video} videoAnimasi={videoAnimasi} visual={visual} audio={audio} artikel={artikel} audioVisual={audioVisual} />
         </main>
       </div>
     </>

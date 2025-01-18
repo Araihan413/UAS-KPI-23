@@ -24,7 +24,7 @@ const NavbarMiddle = () => {
 
   const toggle = {
     hidden: { width: 0, height: 0, padding: 0, transition: { duration: 0.3 } },
-    show: { padding: 40, width: 200, height: 400, transition: { duration: 0.3 } },
+    show: { padding: 40, width: 250, height: 450, transition: { duration: 0.3 } },
   };
 
 
@@ -55,6 +55,9 @@ const NavbarMiddle = () => {
             </li>
             <li className="text-center cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
               <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/video">Video</NavLink>
+            </li>
+            <li className="text-center cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
+              <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/video animasi">Video Animasi</NavLink>
             </li>
             <li className="text-center cursor-pointer rounded-lg overflow-hidden shadow-md h-max w-full md:w-max">
               <NavLink className={({ isActive }) => (isActive ? 'active block px-4 py-2' : 'block px-4 py-2 bg-slate-200 hover:bg-slate-300')} to="/visual">Visual</NavLink>
