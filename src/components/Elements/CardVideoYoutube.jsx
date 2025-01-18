@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const CardAudio = (props) => {
+const CardVideoYoutube = (props) => {
   const { idVideo, idChannel, nama, type } = props
   const [channelData, setChannelData] = useState(null);
   const [videoData, setVideoData] = useState(null);
@@ -77,4 +77,4 @@ const CardAudio = (props) => {
   );
 };
 
-export default CardAudio;
+export default CardVideoYoutube;

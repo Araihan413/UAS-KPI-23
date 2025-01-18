@@ -1,11 +1,8 @@
 import { FaSearch } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
-import VideoContainer from './VideoContainer';
-import AudioContainer from './AudioContainer';
+import VideoYoutubeContainer from './VideoYoutubeContainer';
 import PdfContainer from './PdfContainer';
 import ArtikelContainer from './ArtikelContainer';
-import AudioVisualContainer from './AudioVisualContainer';
-import VideoAnimasiContainer from './VideoAnimasiContainer';
 import dataVideo from '../../data/video.json'
 import dataAudio from '../../data/audio.json'
 import dataVisual from '../../data/visual.json'
@@ -117,12 +114,12 @@ const BarSearch = (props) => {
           )}
           {video && (
             <div className="py-10">
-              <VideoContainer dataVideo={dataSearchVideo} />
+              <VideoYoutubeContainer dataVideo={dataSearchVideo} title="Video" indexIcon={0} />
             </div>
           )}
           {videoAnimasi && (
             <div className="py-10">
-              <VideoAnimasiContainer dataVideoAnimasi={dataSearchVideoAnimasi} />
+              <VideoYoutubeContainer dataVideo={dataSearchVideoAnimasi} title="Animasi" indexIcon={1} />
             </div>
           )}
           {visual && (
@@ -132,12 +129,12 @@ const BarSearch = (props) => {
           )}
           {audio && (
             <div className="py-10">
-              <AudioContainer dataAudio={dataSearchAudio} />
+              <VideoYoutubeContainer dataVideo={dataSearchAudio} title="Audio" indexIcon={2} />
             </div>
           )}
           {audioVisual && (
             <div className="py-10">
-              <AudioVisualContainer dataAudioVisual={dataSearchAudioVisual} />
+              <VideoYoutubeContainer dataVideo={dataSearchAudioVisual} title="Audio Visual" indexIcon={3} />
             </div>
           )}
         </div>
